@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.idea/
+example/
+recordings/
+install.py
+test_simple.py
+phoneme_utils.py
+main.py
+upload.py
+phoneme.py
+requirements.txt
+!scoring.py
