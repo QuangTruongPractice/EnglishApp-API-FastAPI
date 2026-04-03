@@ -1,14 +1,27 @@
+# Environment and Secrets
+.env
+.flaskenv
+
+# Python and virtual environment
 .venv/
+venv/
+env/
 __pycache__/
-*.pyc
-.idea/
-example/
+*.py[cod]
+*$py.class
+
+# Local project artifacts
+static/audios/*.mp3
+audio/output/
 recordings/
-install.py
-test_simple.py
-phoneme_utils.py
-main.py
-upload.py
-phoneme.py
-requirements.txt
+tmp/
+
+# IDE files
+.idea/
+.vscode/
+
+# Project configuration (Stop ignoring these!)
+!requirements.txt
 !scoring.py
+!chat_service.py
+!database.py

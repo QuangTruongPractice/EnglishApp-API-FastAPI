@@ -2,7 +2,7 @@ import os
 from gtts import gTTS
 from pydub import AudioSegment
 
-def text_to_wav(input_file='word.txt', output_dir='output_audio'):
+def text_to_wav(input_file='word.txt', output_dir='audio'):
     # Create output directory if it doesn't exist
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
