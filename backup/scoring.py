@@ -274,7 +274,7 @@ async def score_v2(
 
             return {
                 "success": True,
-                "overall_score": round((avg_sim + p_score) / 2, 3),
+                "score": round((avg_sim + p_score) / 2, 3),
                 "processing_time": round(time.time() - t0, 2),
                 "step1_audio_similarity": {"average_score": avg_sim, "word_details": words},
                 "step2_phoneme_analysis": {

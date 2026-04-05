@@ -4,7 +4,6 @@ python-multipart>=0.0.20
 uvicorn>=0.24.0
 python-dotenv>=1.0.0
 requests>=2.31.0
-shutil
 
 # ── Network / Tunnel ──
 pyngrok>=7.3.0
@@ -12,6 +11,7 @@ pyngrok>=7.3.0
 # --- Database ---
 sqlalchemy>=2.0.23
 pymysql>=1.1.0
+cryptography
 
 # ── ML Core ──
 torch>=2.1.0
@@ -26,3 +26,8 @@ pyannote.audio>=3.1.1
 imageio-ffmpeg
 gTTS>=2.5.0
 pydub>=0.25.1
+yt-dlp
+fuzzywuzzy
+python-Levenshtein
+jellyfish
+nltk

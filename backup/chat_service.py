@@ -12,7 +12,7 @@ from sqlalchemy.orm import Session
 from groq import Groq
 from dotenv import load_dotenv
 
-from database import SessionLocal, ChatHistory, init_db
+from backup.database import SessionLocal, ChatHistory, init_db
 
 load_dotenv()
 
@@ -82,7 +82,7 @@ def get_groq_chat_response(user_id: str, user_text: str, db: Session) -> str:
             model="llama-3.3-70b-versatile",
             messages=messages,
             temperature=0.7,
-            max_tokens=1024,
+            max_tokens=150,
         )
         response_text = completion.choices[0].message.content
         
@@ -149,7 +149,7 @@ def analyze_word_usage_groq(text: str, words: List[str]) -> dict:
     
     Return your response strictly in JSON format:
     {{
-      "overall_score": (int 1-10),
+      "score": (int 1-10),
       "word_analysis": [
         {{
           "word": (string),
@@ -174,7 +174,7 @@ def analyze_word_usage_groq(text: str, words: List[str]) -> dict:
     except Exception as e:
         print(f"[ERR] Word Analysis: {e}")
         return {
-            "overall_score": 0, "word_analysis": [], 
+            "score": 0, "word_analysis": [], 
             "general_feedback": "Analysis failed.", "improved_sentence": ""
         }
 
