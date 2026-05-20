@@ -1,0 +1,23 @@
+# Environment and Secrets
+.env
+.flaskenv
+
+# Python and virtual environment
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local project artifacts
+static/audios/*.mp3
+audio/output/
+recordings/
+tmp/
+audio/
+
+# IDE files
+.idea/
+.vscode/
+

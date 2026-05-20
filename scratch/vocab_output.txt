@@ -1,0 +1,22 @@
+Is 'r' in vocab? True
+Is 'ɹ' in vocab? True
+
+All keys in vocab containing 'r' or 'ɹ':
+  oːɹ: 77
+  r: 31
+  r.: 304
+  rʲ: 96
+  r̝: 232
+  r̝̊: 217
+  r̩: 254
+  ɑːɹ: 68
+  ɔːɹ: 71
+  ər1: 367
+  ər2: 229
+  ər4: 363
+  ər5: 257
+  ərɜ: 245
+  ɛɹ: 94
+  ɪɹ: 97
+  ɹ: 27
+  ʊɹ: 104

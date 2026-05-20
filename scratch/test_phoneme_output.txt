@@ -1,0 +1,42 @@
+Word: abroad
+  Espeak raw: ɐbɹɔːd
+  Espeak tokens: ('ɐ', 'b', 'ɹ', 'ɔː', 'd')
+  Model output: ɐbɹɔd
+  Model tokens: ('ɐ', 'b', 'ɹ', 'ɔ', 'd')
+----------------------------------------
+Word: abstract
+  Espeak raw: æbstɹækt
+  Espeak tokens: ('æ', 'b', 's', 't', 'ɹ', 'æ', 'k', 't')
+  Model output: æbstɹækt
+  Model tokens: ('æ', 'b', 's', 't', 'ɹ', 'æ', 'k', 't')
+----------------------------------------
+Word: across
+  Espeak raw: əkɹɑːs
+  Espeak tokens: ('ə', 'k', 'ɹ', 'ɑː', 's')
+  Model output: ɐkɹɑːs
+  Model tokens: ('ɐ', 'k', 'ɹ', 'ɑː', 's')
+----------------------------------------
+Word: afraid
+  Espeak raw: ɐfɹeɪd
+  Espeak tokens: ('ɐ', 'f', 'ɹ', 'eɪ', 'd')
+  Model output: ɐfɹeɪd
+  Model tokens: ('ɐ', 'f', 'ɹ', 'eɪ', 'd')
+----------------------------------------
+Word: agree
+  Espeak raw: ɐɡɹiː
+  Espeak tokens: ('ɐ', 'ɹ', 'iː')
+  Model output: ʌɡɹi
+  Model tokens: ('ʌ', 'ɹ', 'i')
+----------------------------------------
+Word: bar
+  Espeak raw: bɑːɹ
+  Espeak tokens: ('b', 'ɑː', 'ɹ')
+  Model output: bɑː
+  Model tokens: ('b', 'ɑː')
+----------------------------------------
+Word: brother
+  Espeak raw: bɹʌðɚ
+  Espeak tokens: ('b', 'ɹ', 'ʌ', 'ð', 'ɚ')
+  Model output: bɹʌðɚ
+  Model tokens: ('b', 'ɹ', 'ʌ', 'ð', 'ɚ')
+----------------------------------------
