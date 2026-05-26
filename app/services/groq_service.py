@@ -39,8 +39,16 @@ class GroqService:
         """Dùng AI phân tích xem user dùng từ vựng có đúng ngữ cảnh không"""
         keywords_str = ", ".join([f'"{w}"' for w in words])
         prompt = f"""
-        You are a professional English Writing Coach. 
-        Analyze if the user's text uses each of the target keywords correctly (grammar and semantics).
+        You are a strict English Writing Examiner.
+
+        Evaluate how correctly the user used the target keywords.
+
+        SCORING RULES:
+        - 9-10: All keywords used naturally and grammatically correct.
+        - 7-8: Minor grammar or wording mistakes.
+        - 5-6: Understandable but awkward or partially incorrect usage.
+        - 3-4: Major grammar/context mistakes or Keywords used completely incorrectly or sentence meaningless.
+        - 1-2: No attempt to use keywords or completely wrong usage. 
         User Text: "{text}"
         Target Keywords: [{keywords_str}]
         

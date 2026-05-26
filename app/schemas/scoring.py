@@ -15,6 +15,8 @@ class PhonemeDetail(BaseModel):
     phoneme: str
     status: str
     tip: str
+    similarity_score: Optional[float] = None
+    word_index: Optional[int] = None
 
 class ScoringResponse(BaseModel):
     success: bool
@@ -26,3 +28,4 @@ class ScoringResponse(BaseModel):
     recognition_ratio: Optional[float] = None
     message: Optional[str] = None
     error: Optional[str] = None
+    expected_phoneme: Optional[str] = None

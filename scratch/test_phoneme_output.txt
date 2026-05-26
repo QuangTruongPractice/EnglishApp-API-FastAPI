@@ -1,42 +1,463 @@
-Word: abroad
-  Espeak raw: ɐbɹɔːd
-  Espeak tokens: ('ɐ', 'b', 'ɹ', 'ɔː', 'd')
-  Model output: ɐbɹɔd
-  Model tokens: ('ɐ', 'b', 'ɹ', 'ɔ', 'd')
-----------------------------------------
-Word: abstract
-  Espeak raw: æbstɹækt
-  Espeak tokens: ('æ', 'b', 's', 't', 'ɹ', 'æ', 'k', 't')
-  Model output: æbstɹækt
-  Model tokens: ('æ', 'b', 's', 't', 'ɹ', 'æ', 'k', 't')
-----------------------------------------
-Word: across
-  Espeak raw: əkɹɑːs
-  Espeak tokens: ('ə', 'k', 'ɹ', 'ɑː', 's')
-  Model output: ɐkɹɑːs
-  Model tokens: ('ɐ', 'k', 'ɹ', 'ɑː', 's')
-----------------------------------------
-Word: afraid
-  Espeak raw: ɐfɹeɪd
-  Espeak tokens: ('ɐ', 'f', 'ɹ', 'eɪ', 'd')
-  Model output: ɐfɹeɪd
-  Model tokens: ('ɐ', 'f', 'ɹ', 'eɪ', 'd')
-----------------------------------------
-Word: agree
-  Espeak raw: ɐɡɹiː
-  Espeak tokens: ('ɐ', 'ɹ', 'iː')
-  Model output: ʌɡɹi
-  Model tokens: ('ʌ', 'ɹ', 'i')
-----------------------------------------
-Word: bar
-  Espeak raw: bɑːɹ
-  Espeak tokens: ('b', 'ɑː', 'ɹ')
-  Model output: bɑː
-  Model tokens: ('b', 'ɑː')
-----------------------------------------
-Word: brother
-  Espeak raw: bɹʌðɚ
-  Espeak tokens: ('b', 'ɹ', 'ʌ', 'ð', 'ɚ')
-  Model output: bɹʌðɚ
-  Model tokens: ('b', 'ɹ', 'ʌ', 'ð', 'ɚ')
-----------------------------------------
+=== THỐNG KÊ TỔNG QUAN ===
+Tổng số từ chạy thành công : 50
+Độ tương đồng trung bình (Exact)    : 82.31%
+Độ tương đồng trung bình (Weighted) : 88.43%
+Lợi ích trung bình                 : +6.12 pp
+Scoring method                     : weighted edit distance + phoneme similarity map
+========================================================
+
+Word: double
+  Espeak tokens (Final): ('d', 'ʌ', 'b', 'ə', 'l')
+  Model tokens  (Final): ('d', 'ʌ', 'b', 'ə', 'l')
+  Weighted Distance     : 0.000
+  Exact Similarity      : 100.00%
+  Word Accuracy        : 100.00%
+  Improvement          : +0.00 pp
+------------------------------------------------
+Word: put
+  Espeak tokens (Final): ('p', 'ʊ', 't')
+  Model tokens  (Final): ('p', 'ʊ', 't')
+  Weighted Distance     : 0.000
+  Exact Similarity      : 100.00%
+  Word Accuracy        : 100.00%
+  Improvement          : +0.00 pp
+------------------------------------------------
+Word: throughout
+  Espeak tokens (Final): ('θ', 'ɹ', 'uː', 'aʊ', 't')
+  Model tokens  (Final): ('θ', 'ɹ', 'uː', 'ɑː', 't')
+  Weighted Distance     : 0.128
+  Exact Similarity      : 80.00%
+  Word Accuracy        : 97.44%
+  Improvement          : +17.44 pp
+  Matched Similarity Pairs (substitutions only):
+    [near    ]  eSpeak='aʊ'      model='ɑː'      sim=0.87
+------------------------------------------------
+Word: special
+  Espeak tokens (Final): ('s', 'p', 'ɛ', 'ʃ', 'ə', 'l')
+  Model tokens  (Final): ('s', 'p', 'ɛ', 'ʃ', 'ʊ')
+  Weighted Distance     : 1.200
+  Exact Similarity      : 66.67%
+  Word Accuracy        : 80.00%
+  Improvement          : +13.33 pp
+  Matched Similarity Pairs (substitutions only):
+    [near    ]  eSpeak='ə'       model='ʊ'       sim=0.80
+------------------------------------------------
+Word: criticism
+  Espeak tokens (Final): ('k', 'ɹ', 'ɪɪ', 's', 'ɪ', 'z', 'ə', 'm')
+  Model tokens  (Final): ('k', 'ɹ', 'ɪ', 'ɪ', 's', 'ɪ', 'z', 'ə', 'm')
+  Weighted Distance     : 2.000
+  Exact Similarity      : 77.78%
+  Word Accuracy        : 77.78%
+  Improvement          : +0.00 pp
+  Matched Similarity Pairs (substitutions only):
+    [mismatch]  eSpeak='ɪɪ'      model='ɪ'       sim=0.00
+------------------------------------------------
+Word: comments
+  Espeak tokens (Final): ('k', 'ɑː', 'm', 'ɛ', 'n', 't', 's')
+  Model tokens  (Final): ('k', 'ɑː', 'm', 'ɛ', 'n', 't', 's')
+  Weighted Distance     : 0.000
+  Exact Similarity      : 100.00%
+  Word Accuracy        : 100.00%
+  Improvement          : +0.00 pp
+------------------------------------------------
+Word: immigrants
+  Espeak tokens (Final): ('ɪ', 'm', 'ɪ', 'ɹ', 'ə', 'n', 't', 's')
+  Model tokens  (Final): ('ɪ', 'm', 'ə', 'ɹ', 'ə', 'n', 't', 's')
+  Weighted Distance     : 0.200
+  Exact Similarity      : 87.50%
+  Word Accuracy        : 97.50%
+  Improvement          : +10.00 pp
+  Matched Similarity Pairs (substitutions only):
+    [near    ]  eSpeak='ɪ'       model='ə'       sim=0.80
+------------------------------------------------
+Word: madam
+  Espeak tokens (Final): ('m', 'æ', 'd', 'ə', 'm')
+  Model tokens  (Final): ('m', 'aː', 'd', 'ə', 'm')
+  Weighted Distance     : 1.000
+  Exact Similarity      : 80.00%
+  Word Accuracy        : 80.00%
+  Improvement          : +0.00 pp
+  Matched Similarity Pairs (substitutions only):
+    [mismatch]  eSpeak='æ'       model='aː'      sim=0.00
+------------------------------------------------
+Word: bank
+  Espeak tokens (Final): ('b', 'æ', 'ŋ', 'k')
+  Model tokens  (Final): ('b', 'æ', 'ŋ', 'k')
+  Weighted Distance     : 0.000
+  Exact Similarity      : 100.00%
+  Word Accuracy        : 100.00%
+  Improvement          : +0.00 pp
+------------------------------------------------
+Word: balancing
+  Espeak tokens (Final): ('b', 'æ', 'l', 'ə', 'n', 's', 'ɪ', 'ŋ')
+  Model tokens  (Final): ('b', 'æ', 'l', 'ə', 'n', 's', 'ɪ', 'ŋ')
+  Weighted Distance     : 0.000
+  Exact Similarity      : 100.00%
+  Word Accuracy        : 100.00%
+  Improvement          : +0.00 pp
+------------------------------------------------
+Word: hear
+  Espeak tokens (Final): ('h', 'ɪ', 'ɹ')
+  Model tokens  (Final): ('h', 'iː')
+  Weighted Distance     : 1.200
+  Exact Similarity      : 33.33%
+  Word Accuracy        : 60.00%
+  Improvement          : +26.67 pp
+  Matched Similarity Pairs (substitutions only):
+    [near    ]  eSpeak='ɪ'       model='iː'      sim=0.80
+------------------------------------------------
+Word: fight
+  Espeak tokens (Final): ('f', 'aɪ', 't')
+  Model tokens  (Final): ('f', 'aɪ', 't')
+  Weighted Distance     : 0.000
+  Exact Similarity      : 100.00%
+  Word Accuracy        : 100.00%
+  Improvement          : +0.00 pp
+------------------------------------------------
+Word: covered
+  Espeak tokens (Final): ('k', 'ʌ', 'v', 'd')
+  Model tokens  (Final): ('k', 'ʌ', 'v', 'd')
+  Weighted Distance     : 0.000
+  Exact Similarity      : 100.00%
+  Word Accuracy        : 100.00%
+  Improvement          : +0.00 pp
+------------------------------------------------
+Word: pillar
+  Espeak tokens (Final): ('p', 'ɪ', 'l')
+  Model tokens  (Final): ('p', 'ɪ', 'l')
+  Weighted Distance     : 0.000
+  Exact Similarity      : 100.00%
+  Word Accuracy        : 100.00%
+  Improvement          : +0.00 pp
+------------------------------------------------
+Word: onto
+  Espeak tokens (Final): ('ɑː', 'n', 't', 'ʊ')
+  Model tokens  (Final): ('ɑː', 'n', 't', 'uː')
+  Weighted Distance     : 0.300
+  Exact Similarity      : 75.00%
+  Word Accuracy        : 92.50%
+  Improvement          : +17.50 pp
+  Matched Similarity Pairs (substitutions only):
+    [partial ]  eSpeak='ʊ'       model='uː'      sim=0.70
+------------------------------------------------
+Word: deadlock
+  Espeak tokens (Final): ('d', 'ɛ', 'd', 'l', 'ɑː', 'k')
+  Model tokens  (Final): ('d', 'ɛ', 'd', 'l', 'ɑː', 'k')
+  Weighted Distance     : 0.000
+  Exact Similarity      : 100.00%
+  Word Accuracy        : 100.00%
+  Improvement          : +0.00 pp
+------------------------------------------------
+Word: assess
+  Espeak tokens (Final): ('ɐ', 's', 'ɛ', 's')
+  Model tokens  (Final): ('æ', 's', 'ɛ', 's')
+  Weighted Distance     : 0.100
+  Exact Similarity      : 75.00%
+  Word Accuracy        : 97.50%
+  Improvement          : +22.50 pp
+  Matched Similarity Pairs (substitutions only):
+    [near    ]  eSpeak='ɐ'       model='æ'       sim=0.90
+------------------------------------------------
+Word: about
+  Espeak tokens (Final): ('ɐ', 'b', 'aʊ', 't')
+  Model tokens  (Final): ('ɐ', 'b', 'aʊ', 't')
+  Weighted Distance     : 0.000
+  Exact Similarity      : 100.00%
+  Word Accuracy        : 100.00%
+  Improvement          : +0.00 pp
+------------------------------------------------
+Word: fun
+  Espeak tokens (Final): ('f', 'ʌ', 'n')
+  Model tokens  (Final): ('f', 'ʌ', 'n')
+  Weighted Distance     : 0.000
+  Exact Similarity      : 100.00%
+  Word Accuracy        : 100.00%
+  Improvement          : +0.00 pp
+------------------------------------------------
+Word: depot
+  Espeak tokens (Final): ('d', 'iː', 'p', 'oʊ')
+  Model tokens  (Final): ('d', 'iː', 'p', 'ɔ')
+  Weighted Distance     : 0.100
+  Exact Similarity      : 75.00%
+  Word Accuracy        : 97.50%
+  Improvement          : +22.50 pp
+  Matched Similarity Pairs (substitutions only):
+    [near    ]  eSpeak='oʊ'      model='ɔ'       sim=0.90
+------------------------------------------------
+Word: urgency
+  Espeak tokens (Final): ('ɜː', 'dʒ', 'ə', 'n', 's', 'i')
+  Model tokens  (Final): ('dʒ', 'ə', 'n', 's', 'i')
+  Weighted Distance     : 1.000
+  Exact Similarity      : 83.33%
+  Word Accuracy        : 83.33%
+  Improvement          : +0.00 pp
+------------------------------------------------
+Word: folder
+  Espeak tokens (Final): ('f', 'oʊ', 'l', 'd')
+  Model tokens  (Final): ('f', 'oː', 'l', 'd')
+  Weighted Distance     : 1.000
+  Exact Similarity      : 75.00%
+  Word Accuracy        : 75.00%
+  Improvement          : +0.00 pp
+  Matched Similarity Pairs (substitutions only):
+    [mismatch]  eSpeak='oʊ'      model='oː'      sim=0.00
+------------------------------------------------
+Word: why
+  Espeak tokens (Final): ('w', 'aɪ')
+  Model tokens  (Final): ('w', 'ɑː')
+  Weighted Distance     : 0.128
+  Exact Similarity      : 50.00%
+  Word Accuracy        : 93.60%
+  Improvement          : +43.60 pp
+  Matched Similarity Pairs (substitutions only):
+    [near    ]  eSpeak='aɪ'      model='ɑː'      sim=0.87
+------------------------------------------------
+Word: earned
+  Espeak tokens (Final): ('ɜː', 'n', 'd')
+  Model tokens  (Final): ('ɹ', 'ɪ', 'n', 'd')
+  Weighted Distance     : 2.000
+  Exact Similarity      : 50.00%
+  Word Accuracy        : 50.00%
+  Improvement          : +0.00 pp
+  Matched Similarity Pairs (substitutions only):
+    [mismatch]  eSpeak='ɜː'      model='ɪ'       sim=0.00
+------------------------------------------------
+Word: certificate
+  Espeak tokens (Final): ('s', 't', 'ɪ', 'f', 'ɪ', 'k', 'ə', 't')
+  Model tokens  (Final): ('s', 't', 'ɪ', 'f', 'ɪ', 'k', 'ɪ', 't')
+  Weighted Distance     : 0.200
+  Exact Similarity      : 87.50%
+  Word Accuracy        : 97.50%
+  Improvement          : +10.00 pp
+  Matched Similarity Pairs (substitutions only):
+    [near    ]  eSpeak='ə'       model='ɪ'       sim=0.80
+------------------------------------------------
+Word: transition
+  Espeak tokens (Final): ('t', 'ɹ', 'æ', 'n', 's', 'ɪ', 'ʃ', 'ə', 'n')
+  Model tokens  (Final): ('t', 'ɹ', 'æ', 'n', 'z', 'ɪ', 'ʃ', 'ə', 'n')
+  Weighted Distance     : 0.095
+  Exact Similarity      : 88.89%
+  Word Accuracy        : 98.94%
+  Improvement          : +10.06 pp
+  Matched Similarity Pairs (substitutions only):
+    [near    ]  eSpeak='s'       model='z'       sim=0.91
+------------------------------------------------
+Word: include
+  Espeak tokens (Final): ('ɪ', 'ŋ', 'k', 'l', 'uː', 'd')
+  Model tokens  (Final): ('ɪ', 'n', 'k', 'l', 'uː', 'd')
+  Weighted Distance     : 0.414
+  Exact Similarity      : 83.33%
+  Word Accuracy        : 93.10%
+  Improvement          : +9.77 pp
+  Matched Similarity Pairs (substitutions only):
+    [partial ]  eSpeak='ŋ'       model='n'       sim=0.59
+------------------------------------------------
+Word: telemetry
+  Espeak tokens (Final): ('t', 'ə', 'l', 'ɛ', 'm', 'ə', 't', 'ɹ', 'i')
+  Model tokens  (Final): ('t', 'ʌ', 'l', 'ɛ', 'm', 'ə', 't', 'ɹ', 'i')
+  Weighted Distance     : 0.100
+  Exact Similarity      : 88.89%
+  Word Accuracy        : 98.89%
+  Improvement          : +10.00 pp
+  Matched Similarity Pairs (substitutions only):
+    [near    ]  eSpeak='ə'       model='ʌ'       sim=0.90
+------------------------------------------------
+Word: move
+  Espeak tokens (Final): ('m', 'uː', 'v')
+  Model tokens  (Final): ('m', 'uː', 'v')
+  Weighted Distance     : 0.000
+  Exact Similarity      : 100.00%
+  Word Accuracy        : 100.00%
+  Improvement          : +0.00 pp
+------------------------------------------------
+Word: outfit
+  Espeak tokens (Final): ('aʊ', 't', 'f', 'ɪ', 't')
+  Model tokens  (Final): ('aʊ', 't', 'f', 'ɪ', 't')
+  Weighted Distance     : 0.000
+  Exact Similarity      : 100.00%
+  Word Accuracy        : 100.00%
+  Improvement          : +0.00 pp
+------------------------------------------------
+Word: desserts
+  Espeak tokens (Final): ('d', 'ɪ', 'z', 'ɜː', 't', 's')
+  Model tokens  (Final): ('d', 'ɪ', 'z', 't', 's')
+  Weighted Distance     : 1.000
+  Exact Similarity      : 83.33%
+  Word Accuracy        : 83.33%
+  Improvement          : +0.00 pp
+------------------------------------------------
+Word: inequality
+  Espeak tokens (Final): ('ɪ', 'n', 'iː', 'k', 'w', 'ɔ', 'l', 'i')
+  Model tokens  (Final): ('ɪ', 'n', 'iː', 'k', 'w', 'ɑː', 'l', 'ə', 't', 'i')
+  Weighted Distance     : 2.436
+  Exact Similarity      : 70.00%
+  Word Accuracy        : 75.64%
+  Improvement          : +5.64 pp
+  Matched Similarity Pairs (substitutions only):
+    [partial ]  eSpeak='ɔ'       model='ɑː'      sim=0.56
+------------------------------------------------
+Word: dessert
+  Espeak tokens (Final): ('d', 'ɪ', 'z', 'ɜː', 't')
+  Model tokens  (Final): ('d', 'ɪ', 'z', 't')
+  Weighted Distance     : 1.000
+  Exact Similarity      : 80.00%
+  Word Accuracy        : 80.00%
+  Improvement          : +0.00 pp
+------------------------------------------------
+Word: dissatisfied
+  Espeak tokens (Final): ('d', 'ɪ', 's', 'æɪ', 's', 'f', 'aɪ', 'd')
+  Model tokens  (Final): ('d', 'ɪ', 's', 's', 'æ', 't', 'ɪ', 's', 'f', 'aɪ', 'd')
+  Weighted Distance     : 4.000
+  Exact Similarity      : 63.64%
+  Word Accuracy        : 63.64%
+  Improvement          : +0.00 pp
+  Matched Similarity Pairs (substitutions only):
+    [mismatch]  eSpeak='æɪ'      model='ɪ'       sim=0.00
+------------------------------------------------
+Word: ceremony
+  Espeak tokens (Final): ('s', 'ɛ', 'ɹ', 'm', 'ə', 'n', 'i')
+  Model tokens  (Final): ('s', 'ɛ', 'ɹ', 'ə', 'm', 'oː', 'n', 'i')
+  Weighted Distance     : 2.000
+  Exact Similarity      : 75.00%
+  Word Accuracy        : 75.00%
+  Improvement          : +0.00 pp
+  Matched Similarity Pairs (substitutions only):
+    [mismatch]  eSpeak='ə'       model='oː'      sim=0.00
+------------------------------------------------
+Word: nurse
+  Espeak tokens (Final): ('n', 'ɜː', 's')
+  Model tokens  (Final): ('n', 's')
+  Weighted Distance     : 1.000
+  Exact Similarity      : 66.67%
+  Word Accuracy        : 66.67%
+  Improvement          : +0.00 pp
+------------------------------------------------
+Word: help
+  Espeak tokens (Final): ('h', 'ɛ', 'l', 'p')
+  Model tokens  (Final): ('h', 'ɛ', 'l', 'p')
+  Weighted Distance     : 0.000
+  Exact Similarity      : 100.00%
+  Word Accuracy        : 100.00%
+  Improvement          : +0.00 pp
+------------------------------------------------
+Word: biosphere
+  Espeak tokens (Final): ('b', 'aɪ', 'oʊ', 's', 'f', 'ɪ', 'ɹ')
+  Model tokens  (Final): ('b', 'aɪ', 'j', 'ɔ', 's', 'f', 'iː')
+  Weighted Distance     : 2.300
+  Exact Similarity      : 42.86%
+  Word Accuracy        : 67.14%
+  Improvement          : +24.29 pp
+  Matched Similarity Pairs (substitutions only):
+    [near    ]  eSpeak='oʊ'      model='ɔ'       sim=0.90
+    [near    ]  eSpeak='ɪ'       model='iː'      sim=0.80
+------------------------------------------------
+Word: broker
+  Espeak tokens (Final): ('b', 'ɹ', 'oʊ', 'k')
+  Model tokens  (Final): ('b', 'ɹ', 'oː', 'k')
+  Weighted Distance     : 1.000
+  Exact Similarity      : 75.00%
+  Word Accuracy        : 75.00%
+  Improvement          : +0.00 pp
+  Matched Similarity Pairs (substitutions only):
+    [mismatch]  eSpeak='oʊ'      model='oː'      sim=0.00
+------------------------------------------------
+Word: japan
+  Espeak tokens (Final): ('dʒ', 'ə', 'p', 'æ', 'n')
+  Model tokens  (Final): ('dʒ', 'ʌ', 'p', 'æ', 'n')
+  Weighted Distance     : 0.100
+  Exact Similarity      : 80.00%
+  Word Accuracy        : 98.00%
+  Improvement          : +18.00 pp
+  Matched Similarity Pairs (substitutions only):
+    [near    ]  eSpeak='ə'       model='ʌ'       sim=0.90
+------------------------------------------------
+Word: learned
+  Espeak tokens (Final): ('l', 'ɜː', 'n', 'd')
+  Model tokens  (Final): ('l', 'n', 'd')
+  Weighted Distance     : 1.000
+  Exact Similarity      : 75.00%
+  Word Accuracy        : 75.00%
+  Improvement          : +0.00 pp
+------------------------------------------------
+Word: george
+  Espeak tokens (Final): ('dʒ', 'ɔː', 'ɹ', 'dʒ')
+  Model tokens  (Final): ('dʒ', 'oː', 'dʒ')
+  Weighted Distance     : 2.000
+  Exact Similarity      : 50.00%
+  Word Accuracy        : 50.00%
+  Improvement          : +0.00 pp
+  Matched Similarity Pairs (substitutions only):
+    [mismatch]  eSpeak='ɹ'       model='oː'      sim=0.00
+------------------------------------------------
+Word: different
+  Espeak tokens (Final): ('d', 'ɪ', 'f', 'ɹ', 'ə', 'n', 't')
+  Model tokens  (Final): ('d', 'ɪ', 'f', 'ɹ', 'ə', 'n', 't')
+  Weighted Distance     : 0.000
+  Exact Similarity      : 100.00%
+  Word Accuracy        : 100.00%
+  Improvement          : +0.00 pp
+------------------------------------------------
+Word: testimonials
+  Espeak tokens (Final): ('t', 'ɛ', 's', 't', 'm', 'oʊ', 'n', 'ɪə', 'l', 'z')
+  Model tokens  (Final): ('t', 'ɛ', 's', 't', 'ɪ', 'm', 'oʊ', 'n', 'iʊ', 'z')
+  Weighted Distance     : 3.000
+  Exact Similarity      : 70.00%
+  Word Accuracy        : 70.00%
+  Improvement          : +0.00 pp
+  Matched Similarity Pairs (substitutions only):
+    [mismatch]  eSpeak='l'       model='iʊ'      sim=0.00
+------------------------------------------------
+Word: stalls
+  Espeak tokens (Final): ('s', 't', 'ɔː', 'l', 'z')
+  Model tokens  (Final): ('s', 't', 'ɔ', 'l', 'z')
+  Weighted Distance     : 0.100
+  Exact Similarity      : 80.00%
+  Word Accuracy        : 98.00%
+  Improvement          : +18.00 pp
+  Matched Similarity Pairs (substitutions only):
+    [near    ]  eSpeak='ɔː'      model='ɔ'       sim=0.90
+------------------------------------------------
+Word: whenever
+  Espeak tokens (Final): ('w', 'ɛ', 'n', 'ɛ', 'v')
+  Model tokens  (Final): ('w', 'ɪ', 'n', 'ɛ', 'v')
+  Weighted Distance     : 0.100
+  Exact Similarity      : 80.00%
+  Word Accuracy        : 98.00%
+  Improvement          : +18.00 pp
+  Matched Similarity Pairs (substitutions only):
+    [near    ]  eSpeak='ɛ'       model='ɪ'       sim=0.90
+------------------------------------------------
+Word: solve
+  Espeak tokens (Final): ('s', 'ɑː', 'l', 'v')
+  Model tokens  (Final): ('s', 'ɑː', 'l', 'v')
+  Weighted Distance     : 0.000
+  Exact Similarity      : 100.00%
+  Word Accuracy        : 100.00%
+  Improvement          : +0.00 pp
+------------------------------------------------
+Word: teenagers
+  Espeak tokens (Final): ('t', 'iː', 'n', 'eɪ', 'dʒ', 'z')
+  Model tokens  (Final): ('t', 'iː', 'n', 'eɪ', 'dʒ', 'z')
+  Weighted Distance     : 0.000
+  Exact Similarity      : 100.00%
+  Word Accuracy        : 100.00%
+  Improvement          : +0.00 pp
+------------------------------------------------
+Word: deportation
+  Espeak tokens (Final): ('d', 'p', 'ɔː', 'ɹ', 't', 'eɪ', 'ʃ', 'ə', 'n')
+  Model tokens  (Final): ('d', 'iː', 'p', 'oʊ', 't', 'eɪ', 'ʃ', 'ə', 'n')
+  Weighted Distance     : 2.200
+  Exact Similarity      : 66.67%
+  Word Accuracy        : 75.56%
+  Improvement          : +8.89 pp
+  Matched Similarity Pairs (substitutions only):
+    [near    ]  eSpeak='ɔː'      model='oʊ'      sim=0.80
+------------------------------------------------
+Word: quickly
+  Espeak tokens (Final): ('k', 'w', 'ɪ', 'k', 'l', 'i')
+  Model tokens  (Final): ('k', 'w', 'ɪ', 'k', 'l', 'i')
+  Weighted Distance     : 0.000
+  Exact Similarity      : 100.00%
+  Word Accuracy        : 100.00%
+  Improvement          : +0.00 pp
+------------------------------------------------
